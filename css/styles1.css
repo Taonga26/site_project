@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* what we supply styles*/
+
+.hero {
+    background-image: url(../img/mark5.5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.hero .title {
+    position: relative;
+    bottom: -75%;
+    opacity: 90%;
+}
+
+strong {
+    font-size: 1.5rem;
+}
+
+.title {
+    padding: 20px;
+    margin: 0 200px 10px 0;
+    position: relative;
+    max-width: 500px;
+    border-radius: 0 50px 50px 0;
+    background-color: rgb(187, 11, 11);
+}
+
+.title h3 {
+    font-size: 3rem;
+    color: aliceblue;
+}
+
+.supply2 {
+    background-image: url(../img/Un9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.supply2 h4 {
+    padding-top: 20px;
+    padding-left: 5px;
+    font-size: 1.5rem;
+}
+
+.supply2 p {
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+.supply2 article strong {
+    font-size: 1rem;
+}
+
+.supply2 article li {
+    margin-left: 50px;
+}
+
+.supply2 h4 {
+    color: rgb(7, 7, 63);
+}
+
+.equipment {
+    background-color: rgb(2, 2, 78);
+    opacity: 90%;
+    color: rgba(255, 255, 255, 0.877);
+    padding-top: 20px;
+}
+
+.tech {
+    background-color: rgb(2, 2, 78);
+    color: aliceblue;
+    opacity: 90%;
+    margin-right: 8rem;
+    border-radius: 0 1rem 1rem 0;
+    padding-bottom: 30px;
+}
+
+.tech h4 {
+    color: aliceblue;
+}
+
+.tech strong {
+    color: blanchedalmond;
+}
+
+.equipment p {
+    padding: 0 50px 0 20px;
+    font-size: 1rem;
+}
+
+.equipment strong {
+    color: rgba(255, 255, 255, 0.877);
+    font-size: 1.2rem;
+}
+
+.machinery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.machinery img {
+    min-width: 200px;
+}
+
+.note {
+    background-image: url(../img/Un9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.note img {
+    opacity: 90%;
+}
+
+.note p {
+    padding-bottom: 20px;
+}
+
+.note p strong {
+    font-size: 1rem;
+}
+
+.services {
+    background-image: url(../img/Un9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 100%;
+    max-width: 100%;
+    padding-top: 20px;
+}
+
+.services p {
+    padding: 0 50px 0 20px;
+}
+
+
+.parts {
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: contain;
+}
+
+/* mission and vision styles*/
+.box1 {
+    background-color: rgb(10, 10, 82);
+    color: white;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0 30px 0;
+    border-radius: 0 1rem 1rem 0;
+    box-shadow: 50px gray;
+    opacity: 90%;
+    max-width: 900px;
+
+}
+
+.vision .title1 {
+    margin-top: 1rem;
+}
+
+.title1 {
+    color: rgb(204, 17, 17);
+}
+
+.box1 li {
+    padding: 5px;
+    margin-left: 40px;
+
+}
+
+.background {
+    background-image: url(../img/Un9.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px 0;
+}
+
+.cars img {
+    opacity: 90%;
+
+}
+
+.container {
+    object-position: center;
+    object-fit: fill;
+}
+
+/*compliance styling*/
+.compliance .title {
+    background-color: rgb(2, 2, 78);
+    opacity: 90%;
+}
+
+.compliance h3 {
+    color: aliceblue;
+}
+
+.compliance section {
+    background-image: url(../img/Un9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0;
+}
+
+.card {
+    display: grid;
+    place-content: center;
+}
+
+.compliance section img {
+    padding: 2rem 0 2rem 2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*media Queries*/
+
+@media (orientation: portrait) and (min-height: 960px) and (max-width: 768px) {
+    .hero .title {
+        bottom: -81%;
+        padding: 1.5rem 0;
+        min-width: 310px;
+    }
+
+    .navigation {
+        width: 300px;
+    }
+
+    .hero .title h3 {
+
+        padding-left: 1rem;
+    }
+
+    .note img {
+        max-width: 500px
+    }
+
+    .services p {
+        font-size: 1.5rem;
+    }
+
+    .equipment p {
+        font-size: 1.3rem;
+    }
+
+    .supply2 p,
+    .supply2 article strong,
+    .supply2 article li,
+    li {
+        font-size: 1.3rem;
+    }
+
+    .supply strong {
+        font-size: 1.5rem;
+    }
+
+    .tech {
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title1 {
+        font-size: 2.5rem;
+        padding: 10px 0;
+    }
+
+    .box1 {
+        margin: 0;
+        width: 98%;
+    }
+
+    .box1 li {
+        font-size: small;
+        margin-left: 20px;
+    }
+
+    .cars img {
+        max-width: 320px;
+    }
+
+
+    /*what we supply*/
+
+    .title {
+        min-width: 230px;
+    }
+
+    .services p {
+        font-size: small;
+    }
+
+    .services p strong {
+        font-size: 1rem;
+    }
+
+    .equipment p {
+        font-size: small;
+    }
+
+    .equipment p strong {
+        font-size: 1rem;
+    }
+
+    .parts img {
+        max-width: 134px;
+    }
+
+    .note img {
+        max-width: 315px;
+    }
+
+    .note p strong {
+        font-size: small;
+    }
+
+    .supply2 h4 {
+        font-size: 1rem;
+    }
+
+    .supply2 article p {
+        font-size: small;
+    }
+
+    .supply2 article strong {
+        font-size: small;
+    }
+
+    .supply2 article li {
+        font-size: small;
+        margin-left: 25px;
+    }
+
+    .tech {
+        margin-right: 2rem;
+    }
+
+    .tech h4 {
+
+        font-size: 1rem;
+    }
+
+    .tech li {
+        padding: 2px 0;
+    }
+
+    .title h3 {
+        font-size: 1.5rem;
+    }
+
+
+    /*Compliance*/
+    .compliance .one .title {
+        margin-top: 2rem;
+    }
+
+    .compliance img {
+        max-width: 300px;
+    }
+
+    .compliance h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cars img {
+        width: 100%;
+    }
+
+    .box1 {
+        width: 98%;
+    }
+
+    .title {
+        margin: 0 90px 10px 0;
+    }
+
+    .compliance img {
+        width: 480px;
+    }
+
+    .services p {
+        padding: 0 20px;
+    }
+
+    .equipment p {
+        padding: 0 20px;
+    }
+}
