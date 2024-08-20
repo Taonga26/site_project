@@ -15,7 +15,7 @@
 
 .hero .title {
     position: relative;
-    bottom: -75%;
+    bottom: -70%;
     opacity: 90%;
 }
 
@@ -83,6 +83,10 @@ strong {
     margin-right: 8rem;
     border-radius: 0 1rem 1rem 0;
     padding-bottom: 30px;
+}
+
+.tech li {
+    padding: 0.2rem 0;
 }
 
 .tech h4 {
@@ -155,51 +159,6 @@ strong {
     object-fit: contain;
 }
 
-/* mission and vision styles*/
-.box1 {
-    background-color: rgb(10, 10, 82);
-    color: white;
-    font-size: larger;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px 0 30px 0;
-    border-radius: 0 1rem 1rem 0;
-    box-shadow: 50px gray;
-    opacity: 90%;
-    max-width: 900px;
-
-}
-
-.vision .title1 {
-    margin-top: 1rem;
-}
-
-.title1 {
-    color: rgb(204, 17, 17);
-}
-
-.box1 li {
-    padding: 5px;
-    margin-left: 40px;
-
-}
-
-.background {
-    background-image: url(../img/Un9.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 20px 0;
-}
-
-.cars img {
-    opacity: 90%;
-
-}
-
-.container {
-    object-position: center;
-    object-fit: fill;
-}
 
 /*compliance styling*/
 .compliance .title {
@@ -232,6 +191,11 @@ html {
 }
 
 /*media Queries*/
+@media (width > 930px) {
+    .services p {
+        padding: 0 120px 0 20px;
+    }
+}
 
 @media (orientation: portrait) and (min-height: 960px) and (max-width: 768px) {
     .hero .title {
