@@ -43,7 +43,7 @@ const email = 'contact@example.com';
 function contactline(data) {
     let line = document.createTextNode(data);
     let a = document.createElement('a');
-    a.href = '#';
+    a.className = 'contact-info';
     a.appendChild(line);
     let contact = document.getElementById("contact");
     contact.appendChild(a);
